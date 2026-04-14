@@ -1,0 +1,52 @@
+/* ============================================
+   HexaVerse Shared CSS Variables
+   Hexadigitall Technologies — April 2026
+   Used across all 14 books for visual coherence
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  --hexa-primary: #0d0d2b;        /* Deep space navy */
+  --hexa-secondary: #1a1a4e;      /* Midnight blue */
+  --hexa-accent: #00f5d4;         /* Neon teal */
+  --hexa-highlight: #f5a623;      /* Warm amber */
+  --hexa-danger: #ff4d6d;         /* Alert red */
+  --hexa-white: #f0f4f8;
+  --hexa-text: #e0e8f0;
+  --hexa-muted: #8899aa;
+
+  /* Tier Colors */
+  --tier1-color: #7b2fff;         /* Purple — Galactic Playground */
+  --tier2-color: #ff6b35;         /* Orange — Mission to Mars */
+  --tier3-color: #00c9ff;         /* Cyan — Silicon Astronaut */
+
+  /* Typography */
+  --font-heading: 'Orbitron', 'Segoe UI', sans-serif;
+  --font-body: 'Exo 2', 'Arial', sans-serif;
+  --font-size-base: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 36px;
+  --font-size-sm: 14px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
+  --radius-circle: 50%;
+
+  /* Shadows */
+  --shadow-glow: 0 0 20px rgba(0, 245, 212, 0.4);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-med: 0.4s ease;
+  --transition-slow: 0.8s ease;
+}
