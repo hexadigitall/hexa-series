@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The HexaVerse: An expanding educational universe teaching space, AI, and the future of human civilization from the cradle.">
+  <title>The HexaVerse | Hexadigitall</title>
+  <link rel="stylesheet" href="kids/shared/variables.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: linear-gradient(135deg, var(--hexa-primary) 0%, var(--hexa-secondary) 100%);
+      color: var(--hexa-text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(13, 13, 43, 0.95);
+      padding: var(--spacing-lg) var(--spacing-md);
+      border-bottom: 3px solid var(--hexa-accent);
+      text-align: center;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-xl);
+      color: var(--hexa-accent);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .tagline {
+      font-size: var(--font-size-sm);
+      color: var(--hexa-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .hero {
+      text-align: center;
+      padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .hero h1 {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-md);
+      color: var(--hexa-white);
+    }
+
+    .hero p {
+      font-size: var(--font-size-lg);
+      color: var(--hexa-text);
+      max-width: 800px;
+      margin: 0 auto var(--spacing-lg);
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: var(--spacing-md) var(--spacing-lg);
+      background: var(--hexa-accent);
+      color: var(--hexa-primary);
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      font-weight: bold;
+      margin: var(--spacing-sm);
+      transition: all var(--transition-fast);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .arcs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--spacing-lg);
+      margin: var(--spacing-xl) 0;
+    }
+
+    .arc-card {
+      padding: var(--spacing-lg);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid;
+      transition: all var(--transition-med);
+      cursor: pointer;
+    }
+
+    .arc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .arc-card.galactic {
+      border-color: var(--tier1-color);
+      color: var(--tier1-color);
+    }
+
+    .arc-card.mars {
+      border-color: var(--tier2-color);
+      color: var(--tier2-color);
+    }
+
+    .arc-card.silicon {
+      border-color: var(--tier3-color);
+      color: var(--tier3-color);
+    }
+
+    .arc-card.automating {
+      border-color: var(--tier4-color);
+      color: var(--tier4-color);
+    }
+
+    .arc-card h3 {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .arc-card p {
+      color: var(--hexa-text);
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .arc-card .audience {
+      display: inline-block;
+      padding: var(--spacing-xs) var(--spacing-sm);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--spacing-lg);
+      margin: var(--spacing-xl) 0;
+    }
+
+    .feature-box {
+      padding: var(--spacing-lg);
+      background: rgba(0, 245, 212, 0.08);
+      border-left: 4px solid var(--hexa-accent);
+      border-radius: var(--radius-md);
+    }
+
+    .feature-box h4 {
+      color: var(--hexa-accent);
+      margin-bottom: var(--spacing-sm);
+      font-size: var(--font-size-md, 20px);
+    }
+
+    .feature-box p {
+      color: var(--hexa-text);
+      font-size: var(--font-size-sm);
+    }
+
+    .titles-section {
+      margin: var(--spacing-xl) 0;
+    }
+
+    .titles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-lg);
+    }
+
+    .title-card {
+      padding: var(--spacing-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(0, 245, 212, 0.3);
+      border-radius: var(--radius-md);
+      text-align: center;
+      transition: all var(--transition-fast);
+    }
+
+    .title-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--hexa-accent);
+    }
+
+    .title-card .number {
+      color: var(--hexa-accent);
+      font-weight: bold;
+      font-size: var(--font-size-lg);
+    }
+
+    .title-card .title-text {
+      color: var(--hexa-white);
+      font-size: var(--font-size-sm);
+      margin-top: var(--spacing-sm);
+    }
+
+    footer {
+      background: rgba(13, 13, 43, 0.95);
+      border-top: 2px solid var(--hexa-accent);
+      padding: var(--spacing-lg) var(--spacing-md);
+      text-align: center;
+      margin-top: var(--spacing-xl);
+      color: var(--hexa-muted);
+      font-size: var(--font-size-sm);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-lg);
+      color: var(--hexa-white);
+      margin: var(--spacing-lg) 0 var(--spacing-md);
+      padding-bottom: var(--spacing-md);
+      border-bottom: 2px solid var(--hexa-accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🚀 THE HEXAVERSE</div>
+    <p class="tagline">By Hexadigitall Technologies</p>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h1>From Wonder to Wisdom: Learning the Frontier</h1>
+      <p>An expanding educational universe teaching space, AI, and the future of human civilization—from the cradle to the stars.</p>
+      <a href="#arcs" class="cta-button">Explore Learning Arcs</a>
+      <a href="#titles" class="cta-button">Browse Titles</a>
+    </section>
+
+    <section id="arcs">
+      <h2 class="section-title">🗂️ Learning Arcs</h2>
+      <div class="arcs-grid">
+        <div class="arc-card galactic">
+          <h3>🌟 The Galactic Playground</h3>
+          <p>Wonder, intuition, and physical imagination. Children meet physics through story, play, and sensory experiments.</p>
+          <span class="audience">Ages 5–9</span>
+        </div>
+
+        <div class="arc-card mars">
+          <h3>🚀 Mission to Mars</h3>
+          <p>Engineering tradeoffs and systems thinking. Learners solve real mission constraints: atmosphere, landing, habitats.</p>
+          <span class="audience">Ages 10–14</span>
+        </div>
+
+        <div class="arc-card silicon">
+          <h3>🧠 The Silicon Astronaut</h3>
+          <p>AI, biology, and augmentation. Students explore edge computing, gene editing, neural interfaces, and off-world life.</p>
+          <span class="audience">Ages 15+</span>
+        </div>
+
+        <div class="arc-card automating">
+          <h3>🛠️ Automating the Galaxy</h3>
+          <p>Applied systems design for space-ready builders. Infrastructure as Code, DevOps, and autonomous civilization design.</p>
+          <span class="audience">Advanced</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">✨ Hexadigitall Signature Features</h2>
+      <div class="features">
+        <div class="feature-box">
+          <h4>🔤 Alphabet Explorer™</h4>
+          <p>Supply one word A-Z for each concept. Master vocabulary through creative synthesis and concept association.</p>
+        </div>
+
+        <div class="feature-box">
+          <h4>📝 Ten-Word Master™</h4>
+          <p>Find 10 words from the chapter starting with a specific letter. Deepen review through distributed retrieval practice.</p>
+        </div>
+
+        <div class="feature-box">
+          <h4>🧪 Concept Remix™</h4>
+          <p>Combine ideas from multiple chapters into new scenarios. Practice transfer learning and creative problem-solving.</p>
+        </div>
+
+        <div class="feature-box">
+          <h4>🎨 Science-Illustrated</h4>
+          <p>Beautiful, technically accurate illustrations. Character-driven stories. Consistent world-building across every title.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="titles">
+      <h2 class="section-title">📚 Foundational Story Titles</h2>
+      <div class="titles-grid">
+        <div class="title-card">
+          <div class="number">1</div>
+          <div class="title-text">Why Does the Apple Fall?</div>
+        </div>
+        <div class="title-card">
+          <div class="number">2</div>
+          <div class="title-text">Sound and the Singing Air</div>
+        </div>
+        <div class="title-card">
+          <div class="number">3</div>
+          <div class="title-text">Light is Always in a Hurry</div>
+        </div>
+        <div class="title-card">
+          <div class="number">4</div>
+          <div class="title-text">The Gravity Lab</div>
+        </div>
+        <div class="title-card">
+          <div class="number">5</div>
+          <div class="title-text">My Robot Friend</div>
+        </div>
+        <div class="title-card">
+          <div class="number">6</div>
+          <div class="title-text">The Goldilocks Problem</div>
+        </div>
+        <div class="title-card">
+          <div class="number">7</div>
+          <div class="title-text">The Glass Astronaut</div>
+        </div>
+        <div class="title-card">
+          <div class="number">8</div>
+          <div class="title-text">Fire Against the Wind</div>
+        </div>
+        <div class="title-card">
+          <div class="number">9</div>
+          <div class="title-text">Code the Habitat</div>
+        </div>
+        <div class="title-card">
+          <div class="number">10</div>
+          <div class="title-text">The Digital Twin</div>
+        </div>
+        <div class="title-card">
+          <div class="number">11</div>
+          <div class="title-text">Rewriting the Code of Life</div>
+        </div>
+        <div class="title-card">
+          <div class="number">12</div>
+          <div class="title-text">Mind and Machine</div>
+        </div>
+        <div class="title-card">
+          <div class="number">13</div>
+          <div class="title-text">Edge of the Galaxy</div>
+        </div>
+        <div class="title-card">
+          <div class="number">14</div>
+          <div class="title-text">The Programmable Frontier</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">📖 Core Pillars</h2>
+      <p>Every title bridges one or more of these knowledge areas:</p>
+      <ul style="margin: var(--spacing-lg) 0; padding-left: var(--spacing-lg); color: var(--hexa-text);">
+        <li><strong>Physics & Intuition:</strong> Gravity, sound, light, motion, space-time</li>
+        <li><strong>Mars Engineering:</strong> Entry, descent, landing, habitats, propulsion</li>
+        <li><strong>Space Biology:</strong> Atrophy, radiation, microbiomes, human limits</li>
+        <li><strong>AI & Autonomy:</strong> Edge computing, navigation, robotics, digital twins</li>
+        <li><strong>Bioengineering & Transhumanism:</strong> Gene editing, neural interfaces, adaptive humans</li>
+        <li><strong>Ethics & Civilization Design:</strong> What we should build, not only what we can</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p><strong>Hexadigitall Technologies</strong></p>
+    <p>Educational Curriculum, Interactive Storytelling, and Frontier Systems Thinking</p>
+    <p><em>Space, AI, Biology, and the Programmable Frontier — April 2026</em></p>
+  </footer>
+
+  <script src="kids/shared/utils.js"></script>
+  <script>
+    // Load content registry and populate dynamically if needed
+    fetch('kids/shared/content-registry.json')
+      .then(res => res.json())
+      .then(data => {
+        console.log('HexaVerse loaded:', data);
+        window.HexaVerseRegistry = data;
+      })
+      .catch(err => console.log('Registry load optional:', err));
+  </script>
+</body>
+</html>

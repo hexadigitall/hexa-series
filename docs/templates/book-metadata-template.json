@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "slug": "book-slug-kebab-case",
+    "title": "Full Title Here",
+    "subtitle": "Optional subtitle to clarify scope",
+    "arc": "galactic-playground",
+    "audience": "5-9",
+    "readingLevel": "Grade K-2 or Lexile equivalent",
+    "format": "narrative",
+    "edition": "1.0",
+    "language": "en",
+    "dateCreated": "2026-04-22",
+    "lastModified": "2026-04-22"
+  },
+  "content": {
+    "concepts": [
+      "core concept 1",
+      "core concept 2"
+    ],
+    "learningObjectives": [
+      "By the end of this book, learner can explain...",
+      "By the end of this book, learner can apply..."
+    ],
+    "prerequisites": [],
+    "glossaryTermCount": 0,
+    "chapterCount": 0,
+    "estimatedReadingTime": "15-20 minutes"
+  },
+  "people": {
+    "author": "Author Name",
+    "illustrator": "Illustrator Name",
+    "reviewerScience": "Expert Name and credentials",
+    "reviewerPedagogy": "Educator Name and credentials",
+    "narrativeConsultant": "Optional"
+  },
+  "assets": {
+    "coverIllustration": "assets/cover.png",
+    "illustrations": [
+      {
+        "filename": "assets/chapter-01-concept-01.png",
+        "chapter": 1,
+        "concept": "concept name",
+        "dpi": 300,
+        "format": "png"
+      }
+    ],
+    "characters": [
+      {
+        "name": "hexa",
+        "age": "variable by arc",
+        "appearances": 8
+      }
+    ],
+    "totalIllustrationCount": 0,
+    "illustrationRightsStatus": "all-original-or-licensed"
+  },
+  "gamification": {
+    "features": [
+      {
+        "name": "Alphabet Explorer",
+        "slug": "alphabet-explorer",
+        "concept": "concept covered",
+        "difficulty": "assisted"
+      },
+      {
+        "name": "Ten-Word Master",
+        "slug": "ten-word-master",
+        "letter": "m",
+        "difficulty": "guided"
+      },
+      {
+        "name": "Concept Remix",
+        "slug": "concept-remix",
+        "relatedConcepts": ["concept-1", "concept-2"]
+      }
+    ]
+  },
+  "trademark": {
+    "arcColor": "#7b2fff",
+    "arcName": "The Galactic Playground",
+    "approvalSeals": {
+      "hexadigitalApproved": false,
+      "scienceReviewed": false,
+      "educatorTested": false,
+      "accessibilityCertified": false
+    },
+    "brandTone": "wonder-plus-systems-clarity",
+    "characterConsistency": "verified"
+  },
+  "production": {
+    "status": "draft",
+    "version": "1.0.0",
+    "releaseDate": null,
+    "isbn": null,
+    "printEdition": false,
+    "digitalEdition": false
+  },
+  "accessibility": {
+    "wcagLevel": "AA",
+    "colorContrastVerified": false,
+    "altTextComplete": false,
+    "readableFont": false
+  },
+  "relatedContent": {
+    "previousTitle": "optional-previous-book-slug",
+    "nextTitle": "optional-next-book-slug",
+    "companionCourse": "optional-course-slug",
+    "companionLab": "optional-lab-slug"
+  }
+}

@@ -1,17 +1,26 @@
 // ============================================
 // HexaVerse Shared JS Utilities
 // Hexadigitall Technologies — April 2026
-// Used across all 14 books for coherence
+// Used across foundational titles and future content
 // ============================================
 
 const HexaVerse = {
   // Series metadata
   seriesTitle: "Hexa-AI-Series",
-  totalBooks: 14,
   protagonist: "Hexa",
   world: "The HexaVerse",
+  scope: "Expanding educational universe",
 
-  // Book registry
+  // Content model
+  contentFormats: ["books", "courses", "labs", "capstones"],
+  learningArcs: [
+    { id: 1, name: "The Galactic Playground", ageRange: "5-9" },
+    { id: 2, name: "Mission to Mars", ageRange: "10-14" },
+    { id: 3, name: "The Silicon Astronaut", ageRange: "15+" },
+    { id: 4, name: "Automating the Galaxy", ageRange: "Advanced" }
+  ],
+
+  // Foundational story registry
   books: [
     { id: 1, title: "Why Does the Apple Fall?", tier: 1, ageRange: "5-9", folder: "book-01-why-does-the-apple-fall" },
     { id: 2, title: "Sound and the Singing Air", tier: 1, ageRange: "5-9", folder: "book-02-sound-and-the-singing-air" },
@@ -29,6 +38,10 @@ const HexaVerse = {
     { id: 14, title: "The Programmable Frontier", tier: 3, ageRange: "15+", folder: "book-14-the-programmable-frontier" },
   ],
 
+  get totalBooks() {
+    return this.books.length;
+  },
+
   // Get book by ID
   getBook(id) {
     return this.books.find(b => b.id === id);
@@ -41,7 +54,7 @@ const HexaVerse = {
 
   // Get next book
   getNextBook(id) {
-    return id < this.totalBooks ? this.getBook(id + 1) : null;
+    return id < this.books.length ? this.getBook(id + 1) : null;
   },
 
   // Tier label
@@ -49,7 +62,8 @@ const HexaVerse = {
     const labels = {
       1: "🌟 The Galactic Playground",
       2: "🚀 Mission to Mars",
-      3: "🧠 The Silicon Astronaut"
+      3: "🧠 The Silicon Astronaut",
+      4: "🛠️ Automating the Galaxy"
     };
     return labels[tier] || "Unknown Tier";
   },

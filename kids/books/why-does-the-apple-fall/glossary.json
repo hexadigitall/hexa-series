@@ -1,0 +1,50 @@
+[
+  {
+    "term": "Gravity",
+    "definition": "An invisible force that pulls objects toward Earth and other large objects in space.",
+    "simpleVersion": "The force that makes things fall down.",
+    "example": "Gravity is why the apple fell from the tree."
+  },
+  {
+    "term": "Force",
+    "definition": "A push or pull that makes something move or change direction.",
+    "simpleVersion": "A push or pull.",
+    "example": "Gravity is a force. A kick is also a force."
+  },
+  {
+    "term": "Orbit",
+    "definition": "To move around something else in a circular path.",
+    "simpleVersion": "To go around something in a circle.",
+    "example": "The Moon orbits Earth. Planets orbit the Sun."
+  },
+  {
+    "term": "Weight",
+    "definition": "How heavy something is. Weight depends on gravity.",
+    "simpleVersion": "How heavy something is.",
+    "example": "You weigh more on Earth than you would on the Moon."
+  },
+  {
+    "term": "Acceleration",
+    "definition": "When something speeds up, slows down, or changes direction.",
+    "simpleVersion": "Changing speed or direction.",
+    "example": "When gravity pulls a falling apple downward faster and faster, that's acceleration."
+  },
+  {
+    "term": "Newton",
+    "definition": "A famous scientist who discovered that gravity is a force.",
+    "simpleVersion": "A scientist who understood gravity.",
+    "example": "Isaac Newton figured out why the apple fell."
+  },
+  {
+    "term": "Planet",
+    "definition": "A large object that orbits a star.",
+    "simpleVersion": "A big round object that goes around the Sun.",
+    "example": "Earth is a planet. Mars is another planet."
+  },
+  {
+    "term": "Moon",
+    "definition": "A smaller object that orbits a planet.",
+    "simpleVersion": "Something that goes around a planet.",
+    "example": "Earth has one Moon. It orbits Earth and pulls on our oceans."
+  }
+]

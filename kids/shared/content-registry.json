@@ -1,0 +1,150 @@
+{
+  "project": {
+    "title": "Hexa-AI-Series",
+    "world": "The HexaVerse",
+    "protagonist": "Hexa",
+    "scope": "Expanding educational universe"
+  },
+  "governanceDocuments": {
+    "bookCanonicalStandard": "docs/standards/hexadigitall-book-canonical-standard.md",
+    "printAndSalesPlaybook": "docs/playbooks/hexadigitall-textbook-print-and-sales-playbook.md"
+  },
+  "formats": [
+    "books",
+    "courses",
+    "labs",
+    "capstones"
+  ],
+  "arcs": [
+    {
+      "id": "galactic-playground",
+      "name": "The Galactic Playground",
+      "audience": "Ages 5-9",
+      "theme": "Wonder, intuition, and physical imagination"
+    },
+    {
+      "id": "mission-to-mars",
+      "name": "Mission to Mars",
+      "audience": "Ages 10-14",
+      "theme": "Engineering tradeoffs and systems thinking"
+    },
+    {
+      "id": "silicon-astronaut",
+      "name": "The Silicon Astronaut",
+      "audience": "Ages 15+",
+      "theme": "AI, biology, augmentation, and frontier infrastructure"
+    },
+    {
+      "id": "automating-the-galaxy",
+      "name": "Automating the Galaxy",
+      "audience": "Advanced",
+      "theme": "Applied systems design for space-ready builders"
+    }
+  ],
+  "foundationalTitles": [
+    {
+      "slug": "why-does-the-apple-fall",
+      "title": "Why Does the Apple Fall?",
+      "arc": "galactic-playground",
+      "concepts": ["gravity basics"]
+    },
+    {
+      "slug": "sound-and-the-singing-air",
+      "title": "Sound and the Singing Air",
+      "arc": "galactic-playground",
+      "concepts": ["speed of sound", "waves", "mediums"]
+    },
+    {
+      "slug": "light-is-always-in-a-hurry",
+      "title": "Light is Always in a Hurry",
+      "arc": "galactic-playground",
+      "concepts": ["speed of light", "refraction"]
+    },
+    {
+      "slug": "the-gravity-lab",
+      "title": "The Gravity Lab",
+      "arc": "galactic-playground",
+      "concepts": ["space-time", "gravity"]
+    },
+    {
+      "slug": "my-robot-friend",
+      "title": "My Robot Friend",
+      "arc": "galactic-playground",
+      "concepts": ["AI as helper"]
+    },
+    {
+      "slug": "the-goldilocks-problem",
+      "title": "The Goldilocks Problem",
+      "arc": "mission-to-mars",
+      "concepts": ["Mars atmosphere", "landing challenge"]
+    },
+    {
+      "slug": "the-glass-astronaut",
+      "title": "The Glass Astronaut",
+      "arc": "mission-to-mars",
+      "concepts": ["atrophy", "zero-G biology"]
+    },
+    {
+      "slug": "fire-against-the-wind",
+      "title": "Fire Against the Wind",
+      "arc": "mission-to-mars",
+      "concepts": ["supersonic retro-propulsion"]
+    },
+    {
+      "slug": "code-the-habitat",
+      "title": "Code the Habitat",
+      "arc": "mission-to-mars",
+      "concepts": ["AI habitats", "automation"]
+    },
+    {
+      "slug": "the-digital-twin",
+      "title": "The Digital Twin",
+      "arc": "mission-to-mars",
+      "concepts": ["predictive infrastructure", "simulation"]
+    },
+    {
+      "slug": "rewriting-the-code-of-life",
+      "title": "Rewriting the Code of Life",
+      "arc": "silicon-astronaut",
+      "concepts": ["gene editing", "radiation resistance"]
+    },
+    {
+      "slug": "mind-and-machine",
+      "title": "Mind and Machine",
+      "arc": "silicon-astronaut",
+      "concepts": ["neural interfaces", "brain-AI merge"]
+    },
+    {
+      "slug": "edge-of-the-galaxy",
+      "title": "Edge of the Galaxy",
+      "arc": "silicon-astronaut",
+      "concepts": ["edge computing", "autonomous AI"]
+    },
+    {
+      "slug": "the-programmable-frontier",
+      "title": "The Programmable Frontier",
+      "arc": "silicon-astronaut",
+      "concepts": ["future synthesis"]
+    }
+  ],
+  "plannedTracks": [
+    {
+      "slug": "mission-to-mars",
+      "format": "courses",
+      "title": "Mission to Mars",
+      "outputs": ["engineering challenges", "habitat logic", "rover activities"]
+    },
+    {
+      "slug": "the-silicon-astronaut",
+      "format": "courses",
+      "title": "The Silicon Astronaut",
+      "outputs": ["AI modules", "biology simulations", "ethics debates"]
+    },
+    {
+      "slug": "mars-deployment",
+      "format": "capstones",
+      "title": "Mars Deployment",
+      "outputs": ["deployment brief", "rubric", "starter configuration"]
+    }
+  ]
+}

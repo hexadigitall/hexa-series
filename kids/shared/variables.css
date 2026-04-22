@@ -1,7 +1,7 @@
 /* ============================================
    HexaVerse Shared CSS Variables
    Hexadigitall Technologies — April 2026
-   Used across all 14 books for visual coherence
+  Used across books, courses, labs, and future content
    ============================================ */
 
 :root {
@@ -19,6 +19,7 @@
   --tier1-color: #7b2fff;         /* Purple — Galactic Playground */
   --tier2-color: #ff6b35;         /* Orange — Mission to Mars */
   --tier3-color: #00c9ff;         /* Cyan — Silicon Astronaut */
+  --tier4-color: #9be564;         /* Green — Automating the Galaxy */
 
   /* Typography */
   --font-heading: 'Orbitron', 'Segoe UI', sans-serif;

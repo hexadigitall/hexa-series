@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "slug": "why-does-the-apple-fall",
+    "title": "Why Does the Apple Fall?",
+    "subtitle": "Understanding gravity through story and play",
+    "arc": "galactic-playground",
+    "audience": "5-9",
+    "readingLevel": "Grade K-2",
+    "format": "narrative",
+    "edition": "1.0",
+    "language": "en",
+    "dateCreated": "2026-04-22",
+    "lastModified": "2026-04-22"
+  },
+  "content": {
+    "concepts": [
+      "gravity",
+      "force",
+      "motion",
+      "acceleration",
+      "space"
+    ],
+    "learningObjectives": [
+      "Explain why objects fall toward Earth",
+      "Understand that gravity is a force pulling things down",
+      "Apply gravity ideas to new scenarios (bouncing, jumping, space)"
+    ],
+    "prerequisites": [],
+    "glossaryTermCount": 8,
+    "chapterCount": 4,
+    "estimatedReadingTime": "15 minutes"
+  },
+  "people": {
+    "author": "Hexadigitall Curriculum Team",
+    "illustrator": "[TBD - Seeking professional children's book illustrator]",
+    "reviewerScience": "[TBD - Physics educator or physicist]",
+    "reviewerPedagogy": "[TBD - Early childhood education specialist]",
+    "narrativeConsultant": null
+  },
+  "assets": {
+    "coverIllustration": "assets/cover.png",
+    "illustrations": [
+      {
+        "filename": "assets/chapter-01-hexa-wondering.png",
+        "chapter": 1,
+        "concept": "gravity introduction",
+        "dpi": 300,
+        "format": "png"
+      },
+      {
+        "filename": "assets/chapter-02-apple-falling.png",
+        "chapter": 2,
+        "concept": "gravity in action",
+        "dpi": 300,
+        "format": "png"
+      }
+    ],
+    "characters": [
+      {
+        "name": "hexa",
+        "age": "8 years old (Galactic Playground)",
+        "appearances": 10
+      },
+      {
+        "name": "mentor-gravity",
+        "role": "wise planet guide",
+        "appearances": 4
+      }
+    ],
+    "totalIllustrationCount": 12,
+    "illustrationRightsStatus": "pending-illustrator-contract"
+  },
+  "gamification": {
+    "features": [
+      {
+        "name": "Alphabet Explorer",
+        "slug": "alphabet-explorer-gravity",
+        "concept": "gravity-related words",
+        "difficulty": "assisted",
+        "wordBankIncluded": true
+      },
+      {
+        "name": "Ten-Word Master",
+        "slug": "ten-word-master-g",
+        "letter": "g",
+        "examples": ["Gravity", "Ground", "Grew", "Guided"],
+        "difficulty": "guided"
+      },
+      {
+        "name": "Concept Remix",
+        "slug": "concept-remix-gravity-motion",
+        "relatedConcepts": ["gravity", "motion"],
+        "prompt": "Design a toy that uses gravity and motion together"
+      }
+    ]
+  },
+  "trademark": {
+    "arcColor": "#7b2fff",
+    "arcName": "The Galactic Playground",
+    "approvalSeals": {
+      "hexadigitalApproved": false,
+      "scienceReviewed": false,
+      "educatorTested": false,
+      "accessibilityCertified": false
+    },
+    "brandTone": "wonder-plus-systems-clarity",
+    "characterConsistency": "pending-illustrator"
+  },
+  "production": {
+    "status": "draft",
+    "version": "1.0.0",
+    "releaseDate": null,
+    "isbn": null,
+    "printEdition": false,
+    "digitalEdition": false
+  },
+  "accessibility": {
+    "wcagLevel": "AA",
+    "colorContrastVerified": false,
+    "altTextComplete": false,
+    "readableFont": false
+  },
+  "relatedContent": {
+    "previousTitle": null,
+    "nextTitle": "sound-and-the-singing-air",
+    "companionCourse": null,
+    "companionLab": "gravity-experiment-kit"
+  }
+}
