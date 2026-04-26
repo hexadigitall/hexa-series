@@ -1,0 +1,21 @@
+{
+  "series": "metaphors-for-software",
+  "number": "01",
+  "slug": "lightbulbs-on-classes",
+  "title": "Lightbulbs on Classes",
+  "domain": "workshop",
+  "metaphor": "Blueprints, filaments, and switches",
+  "storyTitle": "The Story of the Master Glassblower",
+  "technicalConcepts": ["OOP", "classes", "instances", "methods", "encapsulation", "constructors"],
+  "primaryLanguage": "python",
+  "secondaryLanguages": ["javascript", "java"],
+  "diagramCount": 0,
+  "wordCountTarget": { "part1": 1200, "part2": 2000, "part3": 3000 },
+  "author": "Hexadigitall Curriculum Team",
+  "technicalReviewer": null,
+  "status": "draft",
+  "version": "0.1.0",
+  "lastModified": "2026-04-26",
+  "relatedBooks": ["02-the-data-drawer"],
+  "prerequisites": []
+}

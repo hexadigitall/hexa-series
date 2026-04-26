@@ -1,0 +1,174 @@
+{
+  "series": {
+    "slug": "metaphors-for-software",
+    "title": "Metaphors for Software",
+    "tagline": "Software is a craft. This is how you build it.",
+    "publisher": "Hexadigitall Technologies",
+    "voice": "Techpoet",
+    "dateCreated": "2026-04-26",
+    "status": "active",
+    "scope": "12 books across 3 domains"
+  },
+  "ruleOfThree": {
+    "part1": {
+      "name": "The Metaphorical Story",
+      "length": "5 pages",
+      "purpose": "Build intuitive understanding before any code appears"
+    },
+    "part2": {
+      "name": "The Visual Blueprint",
+      "diagramCount": "10-15",
+      "framework": "HexaTech HTML/CSS visual diagram framework",
+      "purpose": "Make abstract architecture concrete and navigable"
+    },
+    "part3": {
+      "name": "The Code Adapter",
+      "purpose": "Translate metaphor into real production syntax with before/after examples"
+    }
+  },
+  "domains": [
+    {
+      "id": "workshop",
+      "name": "The Workshop",
+      "subtitle": "The Foundations",
+      "focus": "The individual artisan at their desk. The atoms of code.",
+      "books": ["01", "02", "03", "04"]
+    },
+    {
+      "id": "city",
+      "name": "The City",
+      "subtitle": "The Systems",
+      "focus": "Infrastructure and communication between buildings.",
+      "books": ["05", "06", "07", "08"]
+    },
+    {
+      "id": "factory",
+      "name": "The Factory",
+      "subtitle": "The DevOps and Delivery",
+      "focus": "Automation and scale. The assembly line that ships software.",
+      "books": ["09", "10", "11", "12"]
+    }
+  ],
+  "books": [
+    {
+      "number": "01",
+      "slug": "lightbulbs-on-classes",
+      "title": "Lightbulbs on Classes",
+      "domain": "workshop",
+      "metaphor": "Blueprints, filaments, and switches",
+      "technicalConcepts": ["OOP", "classes", "instances", "methods", "encapsulation"],
+      "storyTitle": "The Story of the Master Glassblower",
+      "status": "draft"
+    },
+    {
+      "number": "02",
+      "slug": "the-data-drawer",
+      "title": "The Data Drawer",
+      "domain": "workshop",
+      "metaphor": "Organizing a cluttered desk with dividers, labels, and folders",
+      "technicalConcepts": ["variables", "data types", "arrays", "hash maps", "data structures"],
+      "storyTitle": "The Story of the Archivist Who Lost Everything",
+      "status": "outline"
+    },
+    {
+      "number": "03",
+      "slug": "the-recursive-mirror",
+      "title": "The Recursive Mirror",
+      "domain": "workshop",
+      "metaphor": "A room of mirrors where each reflection is a smaller version of the original",
+      "technicalConcepts": ["recursion", "stack frames", "base case", "call stack"],
+      "storyTitle": "The Story of the Painter Inside the Painting",
+      "status": "outline"
+    },
+    {
+      "number": "04",
+      "slug": "the-pointer-compass",
+      "title": "The Pointer Compass",
+      "domain": "workshop",
+      "metaphor": "Maps, street addresses, and pointing to where the treasure is buried",
+      "technicalConcepts": ["memory management", "references", "pointers", "heap", "stack"],
+      "storyTitle": "The Story of the Cartographer's Map",
+      "status": "outline"
+    },
+    {
+      "number": "05",
+      "slug": "subnetting-espresso",
+      "title": "Subnetting Espresso",
+      "domain": "city",
+      "metaphor": "Concentrated doses of IP math using coffee cup sizes and room dividers",
+      "technicalConcepts": ["CIDR", "subnet masks", "network boundaries", "IP addressing", "routing"],
+      "storyTitle": "The Story of the Barista Who Divided the Café",
+      "status": "outline"
+    },
+    {
+      "number": "06",
+      "slug": "the-api-post-office",
+      "title": "The API Post Office",
+      "domain": "city",
+      "metaphor": "Envelopes, stamps, return addresses, and delivery protocols",
+      "technicalConcepts": ["REST", "SOAP", "JSON", "HTTP status codes", "endpoints", "authentication"],
+      "storyTitle": "The Story of the Overworked Postman",
+      "status": "outline"
+    },
+    {
+      "number": "07",
+      "slug": "the-load-balancing-traffic-cop",
+      "title": "The Load Balancing Traffic Cop",
+      "domain": "city",
+      "metaphor": "Directing cars to different lanes to prevent a massive traffic jam",
+      "technicalConcepts": ["high availability", "horizontal scaling", "round-robin", "health checks", "failover"],
+      "storyTitle": "The Story of the Officer at the Crossroads",
+      "status": "outline"
+    },
+    {
+      "number": "08",
+      "slug": "the-firewall-border-patrol",
+      "title": "The Firewall Border Patrol",
+      "domain": "city",
+      "metaphor": "Passports, checkpoints, and not-on-the-list denials",
+      "technicalConcepts": ["network security", "ports", "ingress rules", "egress rules", "stateful inspection"],
+      "storyTitle": "The Story of the Border That Never Slept",
+      "status": "outline"
+    },
+    {
+      "number": "09",
+      "slug": "the-docker-shipping-container",
+      "title": "The Docker Shipping Container",
+      "domain": "factory",
+      "metaphor": "Standardized metal boxes that fit on any ship, train, or truck",
+      "technicalConcepts": ["containerization", "Docker images", "environment isolation", "Dockerfile", "registries"],
+      "storyTitle": "The Story of the Cargo That Arrived Whole",
+      "status": "outline"
+    },
+    {
+      "number": "10",
+      "slug": "the-ansible-assembly-line",
+      "title": "The Ansible Assembly Line",
+      "domain": "factory",
+      "metaphor": "Robots on a factory floor following a playbook to build the same car every time",
+      "technicalConcepts": ["infrastructure as code", "idempotency", "configuration management", "playbooks", "inventory"],
+      "storyTitle": "The Story of the Factory That Never Made the Same Mistake Twice",
+      "status": "outline"
+    },
+    {
+      "number": "11",
+      "slug": "the-cicd-conveyor-belt",
+      "title": "The CI/CD Conveyor Belt",
+      "domain": "factory",
+      "metaphor": "A belt that automatically checks every part for quality before it goes into the box",
+      "technicalConcepts": ["pipelines", "automated testing", "continuous integration", "continuous deployment", "gates"],
+      "storyTitle": "The Story of the Line That Refused Bad Parts",
+      "status": "outline"
+    },
+    {
+      "number": "12",
+      "slug": "the-kubernetes-conductor",
+      "title": "The Kubernetes Conductor",
+      "domain": "factory",
+      "metaphor": "An orchestra leader ensuring every instrument plays at the right time",
+      "technicalConcepts": ["container orchestration", "pods", "self-healing", "deployments", "services", "namespaces"],
+      "storyTitle": "The Story of the Conductor Who Never Lost a Note",
+      "status": "outline"
+    }
+  ]
+}

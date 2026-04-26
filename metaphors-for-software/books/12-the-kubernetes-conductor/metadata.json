@@ -1,0 +1,21 @@
+{
+  "series": "metaphors-for-software",
+  "number": "12",
+  "slug": "the-kubernetes-conductor",
+  "title": "The Kubernetes Conductor",
+  "domain": "factory",
+  "metaphor": "An orchestra leader ensuring every instrument plays at the right time",
+  "storyTitle": "The Story of the Conductor Who Never Lost a Note",
+  "technicalConcepts": ["container orchestration", "pods", "self-healing", "deployments", "services", "namespaces", "ingress", "ConfigMaps", "Secrets"],
+  "primaryLanguage": "yaml",
+  "secondaryLanguages": ["bash", "kubectl"],
+  "diagramCount": 0,
+  "wordCountTarget": { "part1": 1200, "part2": 3000, "part3": 4000 },
+  "author": "Hexadigitall Curriculum Team",
+  "technicalReviewer": null,
+  "status": "outline",
+  "version": "0.1.0",
+  "lastModified": "2026-04-26",
+  "relatedBooks": ["09-the-docker-shipping-container", "11-the-cicd-conveyor-belt"],
+  "prerequisites": ["09-the-docker-shipping-container", "11-the-cicd-conveyor-belt"]
+}

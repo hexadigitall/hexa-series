@@ -1,0 +1,26 @@
+{
+  "_comment": "Copy this file into books/[NN-slug]/ and rename to metadata.json. Fill in all fields. Remove this comment.",
+  "series": "metaphors-for-software",
+  "number": "00",
+  "slug": "your-book-slug",
+  "title": "Your Book Title",
+  "domain": "workshop | city | factory",
+  "metaphor": "One-sentence description of the physical world metaphor",
+  "storyTitle": "The Story of the [Character]",
+  "technicalConcepts": ["concept-1", "concept-2", "concept-3"],
+  "primaryLanguage": "python | javascript | yaml | dockerfile | bash | c | nginx | terraform",
+  "secondaryLanguages": [],
+  "diagramCount": 0,
+  "wordCountTarget": {
+    "part1": 1200,
+    "part2": 2500,
+    "part3": 3000
+  },
+  "author": "Hexadigitall Curriculum Team",
+  "technicalReviewer": null,
+  "status": "idea | outline | draft | review | complete",
+  "version": "0.1.0",
+  "lastModified": "YYYY-MM-DD",
+  "relatedBooks": [],
+  "prerequisites": []
+}

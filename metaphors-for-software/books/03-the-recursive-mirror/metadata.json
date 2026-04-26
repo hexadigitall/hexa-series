@@ -1,0 +1,21 @@
+{
+  "series": "metaphors-for-software",
+  "number": "03",
+  "slug": "the-recursive-mirror",
+  "title": "The Recursive Mirror",
+  "domain": "workshop",
+  "metaphor": "A room of mirrors where each reflection is a smaller version of the original",
+  "storyTitle": "The Story of the Painter Inside the Painting",
+  "technicalConcepts": ["recursion", "stack frames", "base case", "call stack", "depth", "memoization"],
+  "primaryLanguage": "python",
+  "secondaryLanguages": ["javascript"],
+  "diagramCount": 0,
+  "wordCountTarget": { "part1": 1200, "part2": 2000, "part3": 3000 },
+  "author": "Hexadigitall Curriculum Team",
+  "technicalReviewer": null,
+  "status": "outline",
+  "version": "0.1.0",
+  "lastModified": "2026-04-26",
+  "relatedBooks": ["02-the-data-drawer", "04-the-pointer-compass"],
+  "prerequisites": ["02-the-data-drawer"]
+}
