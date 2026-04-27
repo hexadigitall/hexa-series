@@ -7,7 +7,7 @@
     "voice": "Techpoet",
     "dateCreated": "2026-04-26",
     "status": "active",
-    "scope": "12 books across 3 domains",
+    "scope": "15 books across 3 domains",
     "expansionCatalog": "docs/series-expansion-catalog.md"
   },
   "ruleOfThree": {
@@ -33,14 +33,14 @@
       "name": "The Workshop",
       "subtitle": "The Foundations",
       "focus": "The individual artisan at their desk. The atoms of code.",
-      "books": ["01", "02", "03", "04"]
+      "books": ["01", "02", "03", "04", "14", "15"]
     },
     {
       "id": "city",
       "name": "The City",
       "subtitle": "The Systems",
       "focus": "Infrastructure and communication between buildings.",
-      "books": ["05", "06", "07", "08"]
+      "books": ["05", "06", "07", "08", "13"]
     },
     {
       "id": "factory",
@@ -170,6 +170,36 @@
       "technicalConcepts": ["container orchestration", "pods", "self-healing", "deployments", "services", "namespaces"],
       "storyTitle": "The Story of the Conductor Who Never Lost a Note",
       "status": "outline"
+    },
+    {
+      "number": "13",
+      "slug": "the-subnetting-toy-box",
+      "title": "The Subnetting Toy Box",
+      "domain": "city",
+      "metaphor": "Toy boxes, sliding walls, and room labels that turn subnet math into spatial reasoning",
+      "technicalConcepts": ["CIDR", "subnet masks", "network ID", "broadcast", "default gateway", "VLSM"],
+      "storyTitle": "The Story of the Builder Who Measured Every Box",
+      "status": "draft"
+    },
+    {
+      "number": "14",
+      "slug": "kindergarten-dsa-simple-shapes-simple-steps",
+      "title": "Kindergarten DSA: Simple Shapes, Simple Steps",
+      "domain": "workshop",
+      "metaphor": "Playground organization patterns that reveal core data structures and algorithm behavior",
+      "technicalConcepts": ["arrays", "linked lists", "stacks", "queues", "search", "sorting", "big o"],
+      "storyTitle": "The Story of Bit and the Playground Map",
+      "status": "draft"
+    },
+    {
+      "number": "15",
+      "slug": "yes-js-straight-to-the-point-javascript",
+      "title": "Yes JS! - Straight to the Point JavaScript",
+      "domain": "workshop",
+      "metaphor": "A field manual that keeps only the tools modern builders need today",
+      "technicalConcepts": ["let", "const", "arrow functions", "destructuring", "map/filter/reduce", "modules", "fetch", "async/await"],
+      "storyTitle": "The Story of the Mechanic Who Traveled Light",
+      "status": "draft"
     }
   ],
   "expansionBacklog": [
@@ -179,7 +209,8 @@
       "title": "The Subnetting Toy Box",
       "domain": "city",
       "priority": "P1",
-      "status": "proposed",
+      "status": "seeded",
+      "mappedBook": "13",
       "likeMinded": ["05", "x07", "x08"],
       "technicalConcepts": ["CIDR", "subnet masks", "network ID", "broadcast", "gateway", "ipaddr()"]
     },
@@ -189,7 +220,8 @@
       "title": "Kindergarten DSA: Simple Shapes, Simple Steps",
       "domain": "workshop",
       "priority": "P1",
-      "status": "proposed",
+      "status": "seeded",
+      "mappedBook": "14",
       "likeMinded": ["02", "03", "x03", "x09"],
       "technicalConcepts": ["arrays", "linked lists", "stacks", "queues", "search", "sorting", "big o"]
     },
@@ -229,7 +261,8 @@
       "title": "Yes JS! - Straight to the Point JavaScript",
       "domain": "workshop",
       "priority": "P1",
-      "status": "proposed",
+      "status": "seeded",
+      "mappedBook": "15",
       "likeMinded": ["02", "04", "x04"],
       "technicalConcepts": ["let", "const", "destructuring", "array methods", "fetch", "modules"]
     },

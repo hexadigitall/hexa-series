@@ -83,6 +83,14 @@ Bundle logic: Help builders ship quickly with modern language patterns, async co
 2. Wave 2 (depth expansion): The Route Map, The Promises Chef, Big O Playground
 3. Wave 3 (architectural synthesis): D+S+A, The Lay of the Land
 
+## Seeded Draft Packs (2026-04-27)
+
+The following Wave 1 titles now have seeded draft packs in books folders:
+
+- 13-the-subnetting-toy-box
+- 14-kindergarten-dsa-simple-shapes-simple-steps
+- 15-yes-js-straight-to-the-point-javascript
+
 ## Notes for Production
 
 - For The Subnetting Toy Box, include an interactive CIDR slider page in the Code Adapter section.

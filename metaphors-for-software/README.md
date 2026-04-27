@@ -6,7 +6,7 @@
 
 ## What This Series Is
 
-**Metaphors for Software** is a 12-book technical education series that treats software engineering as a physical craft.
+**Metaphors for Software** is a 15-book technical education series that treats software engineering as a physical craft.
 
 Every book in the series works at three levels simultaneously:
 
@@ -32,6 +32,8 @@ The series is structured as a journey through three domains. A reader who comple
 | 2 | The Data Drawer | A cluttered desk with dividers and folders | Variables, data types, arrays, hash maps |
 | 3 | The Recursive Mirror | A room of mirrors where each reflection is smaller | Recursion and stack frames |
 | 4 | The Pointer Compass | Maps, addresses, and buried treasure | Memory management, references, pointers |
+| 14 | Kindergarten DSA: Simple Shapes, Simple Steps | A playground of shapes and lines for first-principles CS thinking | Arrays, linked lists, stacks, queues, search, sorting |
+| 15 | Yes JS! - Straight to the Point JavaScript | A lean toolkit for modern JavaScript work | ES6+, modules, fetch, async/await |
 
 ### Domain 2: The City — The Systems
 
@@ -43,6 +45,7 @@ The series is structured as a journey through three domains. A reader who comple
 | 6 | The API Post Office | Envelopes, stamps, and return addresses | REST, SOAP, JSON payloads, HTTP status codes |
 | 7 | The Load Balancing Traffic Cop | Directing cars to prevent a jam | High availability, horizontal scaling, round-robin |
 | 8 | The Firewall Border Patrol | Passports, checkpoints, and denied entry | Network security, ports, ingress/egress rules |
+| 13 | The Subnetting Toy Box | Toy boxes and sliding walls for subnet math | CIDR, subnet masks, network boundaries |
 
 ### Domain 3: The Factory — The DevOps and Delivery
 
@@ -54,6 +57,16 @@ The series is structured as a journey through three domains. A reader who comple
 | 10 | The Ansible Assembly Line | Robots following a playbook to build the same car | Infrastructure as code, idempotency, config management |
 | 11 | The CI/CD Conveyor Belt | A quality check at every step before boxing | Pipelines, automated testing, continuous deployment |
 | 12 | The Kubernetes Conductor | An orchestra leader for every container | Orchestration, pods, self-healing systems |
+
+---
+
+## Expansion Wave 1 (Draft Pack Created)
+
+The following expansion titles now have draft files (`book.md` and `metadata.json`) and are ready for full writing passes:
+
+- Book 13: The Subnetting Toy Box
+- Book 14: Kindergarten DSA: Simple Shapes, Simple Steps
+- Book 15: Yes JS! - Straight to the Point JavaScript
 
 ---
 
@@ -130,7 +143,10 @@ metaphors-for-software/
     ├── 09-the-docker-shipping-container/
     ├── 10-the-ansible-assembly-line/
     ├── 11-the-cicd-conveyor-belt/
-    └── 12-the-kubernetes-conductor/
+    ├── 12-the-kubernetes-conductor/
+    ├── 13-the-subnetting-toy-box/
+    ├── 14-kindergarten-dsa-simple-shapes-simple-steps/
+    └── 15-yes-js-straight-to-the-point-javascript/
 ```
 
 ---

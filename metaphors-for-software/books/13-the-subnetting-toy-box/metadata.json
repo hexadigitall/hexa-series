@@ -1,0 +1,21 @@
+{
+  "series": "metaphors-for-software",
+  "number": "13",
+  "slug": "the-subnetting-toy-box",
+  "title": "The Subnetting Toy Box",
+  "domain": "city",
+  "metaphor": "Toy boxes, sliding walls, and room labels that turn subnet math into spatial reasoning",
+  "storyTitle": "The Story of the Builder Who Measured Every Box",
+  "technicalConcepts": ["CIDR", "subnet masks", "network ID", "broadcast", "default gateway", "VLSM"],
+  "primaryLanguage": "python",
+  "secondaryLanguages": ["yaml", "bash"],
+  "diagramCount": 0,
+  "wordCountTarget": { "part1": 1200, "part2": 2500, "part3": 3000 },
+  "author": "Hexadigitall Curriculum Team",
+  "technicalReviewer": null,
+  "status": "draft",
+  "version": "0.1.0",
+  "lastModified": "2026-04-27",
+  "relatedBooks": ["05-subnetting-espresso", "08-the-firewall-border-patrol"],
+  "prerequisites": []
+}

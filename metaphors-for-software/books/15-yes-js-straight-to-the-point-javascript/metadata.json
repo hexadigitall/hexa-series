@@ -1,0 +1,21 @@
+{
+  "series": "metaphors-for-software",
+  "number": "15",
+  "slug": "yes-js-straight-to-the-point-javascript",
+  "title": "Yes JS! - Straight to the Point JavaScript",
+  "domain": "workshop",
+  "metaphor": "A field manual that keeps only the tools modern builders need today",
+  "storyTitle": "The Story of the Mechanic Who Traveled Light",
+  "technicalConcepts": ["let", "const", "arrow functions", "destructuring", "map/filter/reduce", "modules", "fetch", "async/await"],
+  "primaryLanguage": "javascript",
+  "secondaryLanguages": [],
+  "diagramCount": 0,
+  "wordCountTarget": { "part1": 1200, "part2": 2500, "part3": 3000 },
+  "author": "Hexadigitall Curriculum Team",
+  "technicalReviewer": null,
+  "status": "draft",
+  "version": "0.1.0",
+  "lastModified": "2026-04-27",
+  "relatedBooks": ["04-the-pointer-compass", "11-the-cicd-conveyor-belt"],
+  "prerequisites": []
+}
