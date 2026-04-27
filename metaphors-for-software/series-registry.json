@@ -7,7 +7,8 @@
     "voice": "Techpoet",
     "dateCreated": "2026-04-26",
     "status": "active",
-    "scope": "12 books across 3 domains"
+    "scope": "12 books across 3 domains",
+    "expansionCatalog": "docs/series-expansion-catalog.md"
   },
   "ruleOfThree": {
     "part1": {
@@ -169,6 +170,98 @@
       "technicalConcepts": ["container orchestration", "pods", "self-healing", "deployments", "services", "namespaces"],
       "storyTitle": "The Story of the Conductor Who Never Lost a Note",
       "status": "outline"
+    }
+  ],
+  "expansionBacklog": [
+    {
+      "id": "x01",
+      "slug": "the-subnetting-toy-box",
+      "title": "The Subnetting Toy Box",
+      "domain": "city",
+      "priority": "P1",
+      "status": "proposed",
+      "likeMinded": ["05", "x07", "x08"],
+      "technicalConcepts": ["CIDR", "subnet masks", "network ID", "broadcast", "gateway", "ipaddr()"]
+    },
+    {
+      "id": "x02",
+      "slug": "kindergarten-dsa-simple-shapes-simple-steps",
+      "title": "Kindergarten DSA: Simple Shapes, Simple Steps",
+      "domain": "workshop",
+      "priority": "P1",
+      "status": "proposed",
+      "likeMinded": ["02", "03", "x03", "x09"],
+      "technicalConcepts": ["arrays", "linked lists", "stacks", "queues", "search", "sorting", "big o"]
+    },
+    {
+      "id": "x03",
+      "slug": "d-s-a-data-structures-algorithms-in-motion",
+      "title": "D+S+A: Data, Structures, Algorithms in Motion",
+      "domain": "workshop",
+      "priority": "P2",
+      "status": "proposed",
+      "likeMinded": ["02", "03", "04", "x02", "x09"],
+      "technicalConcepts": ["data modeling", "memory geometry", "traversal", "sorting", "integration patterns"]
+    },
+    {
+      "id": "x04",
+      "slug": "sync-with-asynchronous-programming",
+      "title": "Sync with Asynchronous Programming",
+      "domain": "workshop",
+      "priority": "P1",
+      "status": "proposed",
+      "likeMinded": ["06", "x05", "x06"],
+      "technicalConcepts": ["callbacks", "promises", "async/await", "event loop", "task queues"]
+    },
+    {
+      "id": "x05",
+      "slug": "the-promises-chef",
+      "title": "The Promises Chef",
+      "domain": "workshop",
+      "priority": "P2",
+      "status": "proposed",
+      "likeMinded": ["06", "x04"],
+      "technicalConcepts": ["promise states", "then chaining", "catch", "promise.all", "promise.race"]
+    },
+    {
+      "id": "x06",
+      "slug": "yes-js-straight-to-the-point-javascript",
+      "title": "Yes JS! - Straight to the Point JavaScript",
+      "domain": "workshop",
+      "priority": "P1",
+      "status": "proposed",
+      "likeMinded": ["02", "04", "x04"],
+      "technicalConcepts": ["let", "const", "destructuring", "array methods", "fetch", "modules"]
+    },
+    {
+      "id": "x07",
+      "slug": "the-route-map",
+      "title": "The Route Map",
+      "domain": "city",
+      "priority": "P1",
+      "status": "proposed",
+      "likeMinded": ["05", "08", "x01", "x08"],
+      "technicalConcepts": ["routing table", "default route", "next hop", "dynamic routing", "metrics"]
+    },
+    {
+      "id": "x08",
+      "slug": "the-lay-of-the-land",
+      "title": "The Lay of the Land",
+      "domain": "city",
+      "priority": "P2",
+      "status": "proposed",
+      "likeMinded": ["05", "07", "08", "x07"],
+      "technicalConcepts": ["network topologies", "mesh", "star", "bus", "vlan segmentation"]
+    },
+    {
+      "id": "x09",
+      "slug": "big-o-playground-think-faster-code-smarter",
+      "title": "Big O Playground: Think Faster, Code Smarter",
+      "domain": "workshop",
+      "priority": "P2",
+      "status": "proposed",
+      "likeMinded": ["02", "03", "11", "x02", "x03"],
+      "technicalConcepts": ["asymptotic analysis", "time complexity", "space complexity", "amortized analysis"]
     }
   ]
 }
