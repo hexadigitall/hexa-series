@@ -8,7 +8,9 @@
     "dateCreated": "2026-04-26",
     "status": "active",
     "scope": "15 books across 3 domains",
-    "expansionCatalog": "docs/series-expansion-catalog.md"
+    "expansionCatalog": "docs/series-expansion-catalog.md",
+    "productionStandard": "docs/standards/metaphors-book-production-standard.md",
+    "printSalesPlaybook": "docs/playbooks/metaphors-print-and-sales-playbook.md"
   },
   "ruleOfThree": {
     "part1": {

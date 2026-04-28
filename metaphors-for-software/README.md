@@ -154,6 +154,8 @@ metaphors-for-software/
 ## Operating Documents
 
 - [Series Standard — Rule of Three](docs/standards/techpoet-book-standard.md)
+- [Book Production Standard](docs/standards/metaphors-book-production-standard.md)
+- [Print and Sales Playbook](docs/playbooks/metaphors-print-and-sales-playbook.md)
 - [Series Registry](series-registry.json)
 
 ---
