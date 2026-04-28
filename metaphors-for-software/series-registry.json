@@ -11,6 +11,7 @@
     "expansionCatalog": "docs/series-expansion-catalog.md",
     "productionStandard": "docs/standards/metaphors-book-production-standard.md",
     "printSalesPlaybook": "docs/playbooks/metaphors-print-and-sales-playbook.md",
+    "singleEditionTemplate": "docs/templates/single-edition-html-book-template/README.md",
     "editionPolicy": "single-edition-first",
     "mentorshipPolicy": "optional-extension",
     "solutionsPolicy": "appendix-required-for-implementation-heavy-books"

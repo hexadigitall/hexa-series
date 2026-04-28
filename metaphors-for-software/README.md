@@ -160,6 +160,7 @@ metaphors-for-software/
 - [Series Standard — Rule of Three](docs/standards/techpoet-book-standard.md)
 - [Book Production Standard](docs/standards/metaphors-book-production-standard.md)
 - [Print and Sales Playbook](docs/playbooks/metaphors-print-and-sales-playbook.md)
+- [Single Edition HTML Book Template](docs/templates/single-edition-html-book-template/README.md)
 - [Series Registry](series-registry.json)
 
 ---

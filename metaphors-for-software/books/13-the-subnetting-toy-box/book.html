@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Subnetting Toy Box | Metaphors for Software</title>
+    <meta
+      name="description"
+      content="Book 13 of Metaphors for Software. Learn subnetting through toy box metaphors, visual blueprints, and practical code adapters."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  </head>
+  <body class="domain-city">
+    <header class="cover page-break-after">
+      <p class="series">Metaphors for Software</p>
+      <h1>The Subnetting Toy Box</h1>
+      <p class="subtitle">Turning subnet math into a visual game of boxes, labels, and boundaries</p>
+      <dl class="meta-grid">
+        <div><dt>Book</dt><dd>13</dd></div>
+        <div><dt>Domain</dt><dd>The City</dd></div>
+        <div><dt>Level</dt><dd>Beginner to Intermediate</dd></div>
+        <div><dt>Format</dt><dd>Single Edition, Print + Digital</dd></div>
+      </dl>
+    </header>
+
+    <main>
+      <section class="front-matter page-break-after" id="front-matter">
+        <h2>How to Use This Book</h2>
+        <p>Read in order: metaphor first, visual blueprint second, code adapter last.</p>
+        <p>Work the lab exercises before checking Appendix A for hints and full solutions.</p>
+
+        <h3>Additional Learning Pathways</h3>
+        <p>
+          For deeper guided study in adjacent infrastructure topics, visit
+          <a href="https://hexadigitall.com" target="_blank" rel="noopener noreferrer">hexadigitall.com</a>.
+        </p>
+      </section>
+
+      <section class="toc page-break-after" id="toc">
+        <h2>Table of Contents</h2>
+        <ol id="toc-list"></ol>
+      </section>
+
+      <section id="part-1" class="chapter page-break-before">
+        <h2>Part 1: The Metaphorical Story</h2>
+        <h3>The Story of the Builder Who Measured Every Box</h3>
+        <p>
+          A neighborhood school receives one giant toy chest. It works for a week, then chaos starts: puzzle
+          pieces mix with blocks, science kits disappear, and game cards spill into every corner. The caretaker,
+          Mara, does not buy a bigger chest. She installs sliding walls.
+        </p>
+        <p>
+          Each wall sets a clear boundary. Each section gets a label. She keeps one label for the section itself,
+          one reserved card no child can claim, and one final card to announce cleanup time across the whole section.
+        </p>
+        <p>
+          The breakthrough comes when a new class arrives and needs a tiny section just for partner games. Mara does
+          not rebuild everything. She slices one section into smaller boxes while preserving the main labels.
+        </p>
+        <p>
+          By the end, every class knows exactly where play begins, where it ends, and which door to use when toys
+          need to move between rooms.
+        </p>
+      </section>
+
+      <section id="part-2" class="chapter page-break-before">
+        <h2>Part 2: The Visual Blueprint</h2>
+        <p>Planned diagram sequence:</p>
+        <ol>
+          <li>Toy chest to network map bridge</li>
+          <li>Binary light switches and decimal counting</li>
+          <li>CIDR as moving divider wall</li>
+          <li>Network ID and broadcast as floor and lid</li>
+          <li>Usable host range as playable space</li>
+          <li>/24 split into /25 and /26 toy rooms</li>
+          <li>/30 point-to-point corridor model</li>
+          <li>VLSM design for mixed room sizes</li>
+          <li>Gateway and route handoff between rooms</li>
+          <li>Failure mode: overlapping toy labels</li>
+          <li>Correction pattern: non-overlapping allocation map</li>
+          <li>Printable cheat sheet from /8 to /32</li>
+        </ol>
+      </section>
+
+      <section id="part-3" class="chapter page-break-before">
+        <h2>Part 3: The Code Adapter</h2>
+
+        <h3>Metaphor to Code Mapping</h3>
+        <table>
+          <thead>
+            <tr><th>Story Element</th><th>Technical Name</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Toy chest</td><td>IP block</td></tr>
+            <tr><td>Sliding wall</td><td>Subnet mask</td></tr>
+            <tr><td>Section label</td><td>Network ID</td></tr>
+            <tr><td>Cleanup announcement card</td><td>Broadcast address</td></tr>
+            <tr><td>Room door</td><td>Default gateway</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Canonical Pattern (Python + YAML)</h3>
+        <pre><code class="language-python">import ipaddress
+
+network = ipaddress.ip_network("10.12.64.0/26")
+print("Network:", network.network_address)
+print("Broadcast:", network.broadcast_address)
+print("Hosts:", network.num_addresses - 2)
+</code></pre>
+
+        <pre><code class="language-yaml">subnet_plan:
+  marketing: 10.12.64.0/26
+  engineering: 10.12.64.64/27
+  p2p_links: 10.12.64.96/30
+</code></pre>
+
+        <h3>Antipatterns</h3>
+        <ul>
+          <li>Overlapping CIDR ranges between departments</li>
+          <li>Using /24 by habit when host demand is much smaller</li>
+          <li>Manual gateway math copied across tickets</li>
+        </ul>
+
+        <h3>Before and After</h3>
+        <p><strong>Before:</strong> Spreadsheet-only subnet allocation with repeated collisions.</p>
+        <p><strong>After:</strong> Source-controlled YAML subnet map with generated host ranges and validation checks.</p>
+      </section>
+
+      <section id="labs" class="chapter page-break-before">
+        <h2>Lab Exercises</h2>
+        <ol>
+          <li id="lab-13-01"><strong>Lab 13-01:</strong> Split 10.20.0.0/24 into two equal subnets and list usable host ranges.</li>
+          <li id="lab-13-02"><strong>Lab 13-02:</strong> Design VLSM for 50 hosts, 20 hosts, and 2 point-to-point links in one /24.</li>
+          <li id="lab-13-03"><strong>Lab 13-03:</strong> Detect and correct overlapping ranges in a broken subnet plan.</li>
+        </ol>
+      </section>
+
+      <section id="appendix-solutions" class="appendix page-break-before">
+        <h2>Appendix A: Lab Solutions</h2>
+
+        <article>
+          <h3>Lab 13-01</h3>
+          <h4>Hint</h4>
+          <p>Cut one /24 in half by borrowing one host bit.</p>
+          <h4>Step by Step</h4>
+          <ol>
+            <li>Borrow one bit from host space: /24 becomes /25.</li>
+            <li>Block size is 128 in last octet.</li>
+            <li>Subnets are .0/25 and .128/25.</li>
+          </ol>
+          <h4>Full Solution</h4>
+          <pre><code class="language-text">10.20.0.0/25   usable: 10.20.0.1   to 10.20.0.126
+10.20.0.128/25 usable: 10.20.0.129 to 10.20.0.254</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 13-02</h3>
+          <h4>Hint</h4>
+          <p>Allocate largest subnet first, then continue descending by need.</p>
+          <h4>Step by Step</h4>
+          <ol>
+            <li>50 hosts requires /26.</li>
+            <li>20 hosts requires /27.</li>
+            <li>Each point-to-point link requires /30.</li>
+          </ol>
+          <h4>Full Solution</h4>
+          <pre><code class="language-text">Start with 10.20.1.0/24
+- Team A (50 hosts): 10.20.1.0/26
+- Team B (20 hosts): 10.20.1.64/27
+- P2P-1: 10.20.1.96/30
+- P2P-2: 10.20.1.100/30</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 13-03</h3>
+          <h4>Hint</h4>
+          <p>Sort ranges by network start and compare end boundaries for overlap.</p>
+          <h4>Step by Step</h4>
+          <ol>
+            <li>Convert each CIDR to numeric start and end.</li>
+            <li>Check if next start falls within previous range.</li>
+            <li>Move conflicting subnet to first available non-overlapping block.</li>
+          </ol>
+          <h4>Full Solution</h4>
+          <pre><code class="language-text">Broken plan:
+- 10.30.0.0/26
+- 10.30.0.32/27   (overlaps)
+
+Corrected:
+- 10.30.0.0/26
+- 10.30.0.64/27</code></pre>
+        </article>
+      </section>
+    </main>
+
+    <script src="interactions.js"></script>
+  </body>
+</html>
