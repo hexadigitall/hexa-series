@@ -15,7 +15,8 @@
   "technicalReviewer": null,
   "status": "draft",
   "version": "0.1.0",
-  "lastModified": "2026-04-27",
+  "lastModified": "2026-04-28",
+  "sourceFiles": ["book.html", "styles.css", "print.css", "interactions.js"],
   "relatedBooks": ["02-the-data-drawer", "03-the-recursive-mirror"],
   "prerequisites": []
 }

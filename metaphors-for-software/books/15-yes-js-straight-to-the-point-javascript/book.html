@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yes JS! – Straight to the Point JavaScript | Metaphors for Software</title>
+    <meta
+      name="description"
+      content="Book 15 of Metaphors for Software. Modern ES6+ JavaScript patterns for real production work — no legacy clutter."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  </head>
+  <body class="domain-workshop">
+
+    <header class="cover page-break-after">
+      <p class="series">Metaphors for Software</p>
+      <h1>Yes JS!</h1>
+      <p class="subtitle">Straight to the Point JavaScript</p>
+      <dl class="meta-grid">
+        <div><dt>Book</dt><dd>15</dd></div>
+        <div><dt>Domain</dt><dd>The Workshop</dd></div>
+        <div><dt>Level</dt><dd>Beginner to Intermediate</dd></div>
+        <div><dt>Format</dt><dd>Single Edition, Print + Digital</dd></div>
+      </dl>
+    </header>
+
+    <main>
+
+      <section class="front-matter page-break-after" id="front-matter">
+        <h2>How to Use This Book</h2>
+        <p>
+          Every chapter follows the Rule of Three: metaphor first, visual blueprint second,
+          code adapter last. Run every code example. Change one variable. Break it on purpose.
+          That is how the pattern becomes permanent.
+        </p>
+        <p>
+          Lab exercises are in each chapter. Solutions with hints and step-by-step reasoning
+          are in Appendix A.
+        </p>
+        <h3>Additional Learning Pathways</h3>
+        <p>
+          For guided JavaScript and frontend engineering courses, visit
+          <a href="https://hexadigitall.com" target="_blank" rel="noopener noreferrer">hexadigitall.com</a>.
+        </p>
+      </section>
+
+      <section class="toc page-break-after" id="toc">
+        <h2>Table of Contents</h2>
+        <ol id="toc-list"></ol>
+      </section>
+
+      <!-- ============================================================
+           PART 1: THE METAPHORICAL STORY
+      ============================================================ -->
+      <section id="part-1" class="chapter page-break-before">
+        <h2>Part 1: The Metaphorical Story</h2>
+        <h3>The Story of the Mechanic Who Traveled Light</h3>
+
+        <p>
+          Nia is the fastest mechanic in a crowded workshop district. Her secret is not speed.
+          It is selection.
+        </p>
+        <p>
+          She carries only the tools that solve today's machines. Old tools still hang on the
+          wall. Some of them work. A few of them are irreplaceable in specific, ancient
+          situations. But Nia does not pack them for field calls. She has learned which problems
+          repeat, and she carries the tools that solve those problems without friction.
+        </p>
+        <p>
+          Her kit: one wrench for things that will not change (she has labeled it
+          <em>permanent</em>), one for things that must flex throughout the shift
+          (<em>adjustable</em>), one folding disassembly guide that collapses a complex
+          object down to its components in a single motion, and a compact radio for sending
+          requests out and reading what comes back.
+        </p>
+        <p>
+          At midday, another mechanic arrives from the old school. His bag is large. His tools
+          rattle. He spends eight minutes finding the wrench he needs. By the time he starts,
+          Nia has already fixed three jobs and is writing notes for the next shift.
+        </p>
+        <p>
+          A junior apprentice asks Nia what the trick is.
+        </p>
+        <p>
+          She holds up the wrench labeled <em>permanent</em>. "If it should never change, use
+          this. The system will remind you loudly if you try to swap it."
+        </p>
+        <p>
+          She holds up the <em>adjustable</em>. "If it needs to change as the job moves, use
+          this one. Never use the permanent wrench for it."
+        </p>
+        <p>
+          She folds out the disassembly guide. "When a machine arrives, I don't carry the whole
+          machine. I pull only the parts I need. One motion."
+        </p>
+        <p>
+          She taps the radio. "And when I need something from somewhere else, I send a clean
+          request, wait for the reply, and handle it when it arrives. I don't stop working
+          while I wait."
+        </p>
+        <p>
+          Mastery is not owning every tool ever made. Mastery is carrying the smallest reliable
+          set that matches today's work.
+        </p>
+      </section>
+
+      <!-- ============================================================
+           PART 2: THE VISUAL BLUEPRINT
+      ============================================================ -->
+      <section id="part-2" class="chapter page-break-before">
+        <h2>Part 2: The Visual Blueprint</h2>
+        <p>Planned diagram sequence (12 diagrams):</p>
+        <ol>
+          <li>Legacy bag vs lean toolkit side-by-side comparison</li>
+          <li><code>let</code> vs <code>const</code> vs <code>var</code> decision flowchart</li>
+          <li>Arrow function syntax minimap with shorthand variants</li>
+          <li>Template literal interpolation before/after comparison</li>
+          <li>Destructuring from objects and arrays with alias notation</li>
+          <li>Spread and rest operator visual split</li>
+          <li><code>map</code>, <code>filter</code>, <code>reduce</code> data pipeline diagram</li>
+          <li>ES module boundaries: <code>import</code> and <code>export</code> flow</li>
+          <li>Optional chaining <code>?.</code> safety ladder vs runtime crash path</li>
+          <li><code>fetch</code> request/response lifecycle diagram</li>
+          <li><code>async</code>/<code>await</code> timeline vs callback chain comparison</li>
+          <li>Modern JS feature readiness matrix for real production stacks</li>
+        </ol>
+
+        <div class="diagram-placeholder">
+          <p><strong>Diagram 2.1 — Toolkit Comparison</strong><br />Diagram to be produced in HexaTech HTML/CSS visual framework.</p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           PART 3: THE CODE ADAPTER
+      ============================================================ -->
+      <section id="part-3" class="chapter page-break-before">
+        <h2>Part 3: The Code Adapter</h2>
+
+        <h3>Metaphor to Code Mapping</h3>
+        <table>
+          <thead>
+            <tr><th>Story Element</th><th>Technical Mapping</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Permanent wrench</td><td><code>const</code> — binding cannot be reassigned</td></tr>
+            <tr><td>Adjustable wrench</td><td><code>let</code> — block-scoped, can be reassigned</td></tr>
+            <tr><td>Old school full bag</td><td><code>var</code> — avoid in modern code</td></tr>
+            <tr><td>Folding disassembly guide</td><td>Destructuring assignment</td></tr>
+            <tr><td>Compact radio</td><td>Fetch API + async/await</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Canonical Patterns</h3>
+
+        <h4>const and let — never var</h4>
+        <pre><code class="language-javascript">// const: the binding will not change
+const API_URL = "https://api.hexadigitall.com/v1";
+
+// let: the value will change inside this scope
+let retries = 0;
+while (retries < 3) {
+  retries++;
+}
+
+// var is function-scoped and hoisted — creates unpredictable bugs
+// Never use var in modern JavaScript.
+</code></pre>
+
+        <h4>Arrow Functions</h4>
+        <pre><code class="language-javascript">// Traditional
+function double(n) { return n * 2; }
+
+// Arrow — concise, no own `this`
+const double = (n) => n * 2;
+
+// With a block body when you need multiple statements
+const greet = (name) => {
+  const msg = `Hello, ${name}`;
+  return msg;
+};
+</code></pre>
+
+        <h4>Template Literals</h4>
+        <pre><code class="language-javascript">const name = "Nia";
+const role = "mechanic";
+
+// Old: "Hello, " + name + ". You are a " + role + "."
+// New:
+const intro = `Hello, ${name}. You are a ${role}.`;
+</code></pre>
+
+        <h4>Destructuring</h4>
+        <pre><code class="language-javascript">// Object destructuring — pull only what you need
+const tool = { name: "wrench", size: "large", material: "steel" };
+const { name, size } = tool;
+
+// Array destructuring
+const [first, second] = ["A", "B", "C"];
+
+// Destructuring with rename
+const { name: toolName } = tool;
+
+// Destructuring in function parameters
+function describe({ name, size }) {
+  return `${name} is ${size}`;
+}
+</code></pre>
+
+        <h4>Spread and Rest</h4>
+        <pre><code class="language-javascript">// Spread: expand an iterable
+const tools = ["wrench", "screwdriver"];
+const fullKit = [...tools, "hammer", "level"];
+
+// Spread to shallow-copy an object
+const base = { host: "localhost", port: 3000 };
+const overrides = { ...base, port: 8080 };
+
+// Rest: gather remaining arguments
+function logAll(first, ...rest) {
+  console.log(first, rest);
+}
+</code></pre>
+
+        <h4>Array Methods: map, filter, reduce</h4>
+        <pre><code class="language-javascript">const prices = [10, 25, 8, 40, 15];
+
+// map: transform each item
+const withTax = prices.map((p) => p * 1.2);
+
+// filter: keep items that pass a test
+const affordable = prices.filter((p) => p <= 20);
+
+// reduce: collapse to a single value
+const total = prices.reduce((sum, p) => sum + p, 0);
+</code></pre>
+
+        <h4>ES Modules</h4>
+        <pre><code class="language-javascript">// utils.js
+export function formatPrice(n) {
+  return `$${n.toFixed(2)}`;
+}
+export const TAX_RATE = 1.2;
+
+// main.js
+import { formatPrice, TAX_RATE } from "./utils.js";
+console.log(formatPrice(10 * TAX_RATE));
+</code></pre>
+
+        <h4>Optional Chaining</h4>
+        <pre><code class="language-javascript">const user = { profile: { email: "nia@hex.com" } };
+
+// Without optional chaining — throws if profile is undefined
+const email = user.profile.email;
+
+// With optional chaining — returns undefined instead of throwing
+const email = user?.profile?.email;
+
+// Combined with nullish coalescing for a clean fallback
+const display = user?.profile?.email ?? "no email on file";
+</code></pre>
+
+        <h4>Fetch with async/await</h4>
+        <pre><code class="language-javascript">async function getUser(id) {
+  try {
+    const res = await fetch(`https://api.hexadigitall.com/users/${id}`);
+    if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.error("Fetch failed:", err.message);
+    return null;
+  }
+}
+</code></pre>
+
+        <h3>Antipatterns</h3>
+
+        <h4>Mutating Shared State via Shallow Copy</h4>
+        <pre><code class="language-javascript">// WRONG: both variables point to the same object
+const original = { host: "prod", port: 443 };
+const copy = original;
+copy.port = 8080;
+console.log(original.port); // 8080 — original is mutated
+
+// FIX: use spread to create a new object
+const copy = { ...original };
+copy.port = 8080;
+console.log(original.port); // 443 — original is safe
+</code></pre>
+
+        <h4>Callback Chain Instead of async/await</h4>
+        <pre><code class="language-javascript">// PROBLEMATIC: nested callbacks create hard-to-follow error paths
+fetch(url1, (res1) => {
+  fetch(url2, (res2) => {
+    fetch(url3, (res3) => {
+      // three levels deep and growing
+    });
+  });
+});
+
+// FIX: async/await reads like synchronous code
+const res1 = await fetch(url1);
+const res2 = await fetch(url2);
+const res3 = await fetch(url3);
+</code></pre>
+
+        <h3>Before and After</h3>
+        <p><strong>Before:</strong> Mixed <code>var</code>, string concatenation, manual loops over arrays, nested callbacks, and manually constructed URLs.</p>
+        <p><strong>After:</strong> Consistent <code>const</code>/<code>let</code>, template literals, <code>map</code>/<code>filter</code>/<code>reduce</code> pipelines, named module boundaries, and clean async/await request flows.</p>
+      </section>
+
+      <!-- ============================================================
+           LAB EXERCISES
+      ============================================================ -->
+      <section id="labs" class="chapter page-break-before">
+        <h2>Lab Exercises</h2>
+        <ol>
+          <li id="lab-15-01">
+            <strong>Lab 15-01 — const and let:</strong>
+            Refactor a snippet that uses <code>var</code> throughout. Replace every
+            declaration with the appropriate <code>const</code> or <code>let</code>. Explain
+            each choice.
+          </li>
+          <li id="lab-15-02">
+            <strong>Lab 15-02 — Array Methods:</strong>
+            Given <code>[3, 14, 7, 25, 11, 8]</code>, use <code>filter</code> to keep only
+            values above 10, <code>map</code> to double each result, and <code>reduce</code>
+            to sum the final list. Chain the three operations in one expression.
+          </li>
+          <li id="lab-15-03">
+            <strong>Lab 15-03 — Destructuring:</strong>
+            Given a user object with nested address, pull out <code>city</code> and
+            <code>postcode</code> in a single destructuring statement with a fallback
+            default for <code>postcode</code>.
+          </li>
+          <li id="lab-15-04">
+            <strong>Lab 15-04 — Fetch:</strong>
+            Write an <code>async</code> function that fetches
+            <code>https://jsonplaceholder.typicode.com/users/1</code>, handles non-OK
+            responses, and logs the user's name and email.
+          </li>
+          <li id="lab-15-05">
+            <strong>Lab 15-05 — Modules:</strong>
+            Create two files: <code>math.js</code> that exports <code>add</code>,
+            <code>subtract</code>, and <code>PI</code>, and <code>main.js</code> that
+            imports and uses all three.
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============================================================
+           APPENDIX A: LAB SOLUTIONS
+      ============================================================ -->
+      <section id="appendix-solutions" class="appendix page-break-before">
+        <h2>Appendix A: Lab Solutions</h2>
+
+        <article>
+          <h3>Lab 15-01 — const and let</h3>
+          <h4>Hint</h4>
+          <p>Use <code>const</code> for anything that is assigned once and does not change. Use <code>let</code> only when the value must be reassigned.</p>
+          <h4>Full Solution</h4>
+          <pre><code class="language-javascript">// Before
+var count = 0;
+var name = "Nia";
+var items = [];
+for (var i = 0; i < 3; i++) {
+  items.push(i);
+  count++;
+}
+
+// After
+let count = 0;          // reassigned each loop
+const name = "Nia";    // never reassigned
+const items = [];       // array reference is constant; contents can change
+for (let i = 0; i < 3; i++) {
+  items.push(i);
+  count++;
+}</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 15-02 — Array Methods</h3>
+          <h4>Hint</h4>
+          <p>Chain <code>.filter()</code> → <code>.map()</code> → <code>.reduce()</code> in a single expression.</p>
+          <h4>Full Solution</h4>
+          <pre><code class="language-javascript">const nums = [3, 14, 7, 25, 11, 8];
+const result = nums
+  .filter((n) => n > 10)      // [14, 25, 11]
+  .map((n) => n * 2)           // [28, 50, 22]
+  .reduce((sum, n) => sum + n, 0); // 100
+console.log(result); // 100</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 15-03 — Destructuring</h3>
+          <h4>Hint</h4>
+          <p>Nest the destructuring to match the object shape. Use <code>= "default"</code> for the fallback.</p>
+          <h4>Full Solution</h4>
+          <pre><code class="language-javascript">const user = {
+  name: "Nia",
+  address: { city: "Lagos", country: "Nigeria" }
+};
+
+const { address: { city, postcode = "N/A" } } = user;
+console.log(city);     // "Lagos"
+console.log(postcode); // "N/A"</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 15-04 — Fetch</h3>
+          <h4>Hint</h4>
+          <p>Check <code>res.ok</code> before calling <code>res.json()</code>. Wrap in try/catch.</p>
+          <h4>Full Solution</h4>
+          <pre><code class="language-javascript">async function fetchUser(id) {
+  try {
+    const res = await fetch(
+      `https://jsonplaceholder.typicode.com/users/${id}`
+    );
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const { name, email } = await res.json();
+    console.log(`${name} — ${email}`);
+  } catch (err) {
+    console.error("Failed:", err.message);
+  }
+}
+
+fetchUser(1);</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 15-05 — Modules</h3>
+          <h4>Full Solution</h4>
+          <pre><code class="language-javascript">// math.js
+export const PI = 3.14159;
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+
+// main.js
+import { PI, add, subtract } from "./math.js";
+console.log(PI);           // 3.14159
+console.log(add(4, 6));    // 10
+console.log(subtract(9, 4)); // 5</code></pre>
+        </article>
+      </section>
+
+    </main>
+
+    <script src="interactions.js"></script>
+  </body>
+</html>

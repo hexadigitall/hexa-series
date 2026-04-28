@@ -1,0 +1,60 @@
+@page {
+  size: 6in 9in;
+  margin-top: 0.75in;
+  margin-bottom: 0.8in;
+}
+
+@page :left {
+  margin-left: 0.8in;
+  margin-right: 0.55in;
+}
+
+@page :right {
+  margin-left: 0.55in;
+  margin-right: 0.8in;
+}
+
+html,
+body {
+  width: 6in;
+  background: #ffffff;
+}
+
+body {
+  font-size: 10.8pt;
+  line-height: 1.42;
+  margin: 0;
+}
+
+main,
+.cover {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.cover,
+.chapter,
+.front-matter,
+.toc,
+.appendix {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  page-break-after: avoid;
+}
+
+pre,
+blockquote,
+table,
+img,
+figure {
+  break-inside: avoid;
+}

@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kindergarten DSA: Simple Shapes, Simple Steps | Metaphors for Software</title>
+    <meta
+      name="description"
+      content="Book 14 of Metaphors for Software. Data structures and algorithms taught through playground metaphors, visual blueprints, and runnable code."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  </head>
+  <body class="domain-workshop">
+
+    <header class="cover page-break-after">
+      <p class="series">Metaphors for Software</p>
+      <h1>Kindergarten DSA</h1>
+      <p class="subtitle">Simple Shapes, Simple Steps</p>
+      <dl class="meta-grid">
+        <div><dt>Book</dt><dd>14</dd></div>
+        <div><dt>Domain</dt><dd>The Workshop</dd></div>
+        <div><dt>Level</dt><dd>Beginner</dd></div>
+        <div><dt>Format</dt><dd>Single Edition, Print + Digital</dd></div>
+      </dl>
+    </header>
+
+    <main>
+
+      <section class="front-matter page-break-after" id="front-matter">
+        <h2>How to Use This Book</h2>
+        <p>
+          Read each chapter in the Rule of Three sequence: story first, then the visual blueprint,
+          then the code adapter. The story is not optional decoration — it is the scaffolding
+          everything else hangs from.
+        </p>
+        <p>
+          Work through the lab exercises before checking Appendix A. The hint-first structure
+          is deliberate: try the hint, struggle for ten minutes, then read the full solution.
+        </p>
+        <h3>Additional Learning Pathways</h3>
+        <p>
+          For guided courses in Python, JavaScript, and data engineering, visit
+          <a href="https://hexadigitall.com" target="_blank" rel="noopener noreferrer">hexadigitall.com</a>.
+        </p>
+      </section>
+
+      <section class="toc page-break-after" id="toc">
+        <h2>Table of Contents</h2>
+        <ol id="toc-list"></ol>
+      </section>
+
+      <!-- ============================================================
+           PART 1: THE METAPHORICAL STORY
+      ============================================================ -->
+      <section id="part-1" class="chapter page-break-before">
+        <h2>Part 1: The Metaphorical Story</h2>
+        <h3>The Story of Bit and the Playground Map</h3>
+
+        <p>
+          Bit is the playground helper robot. Every morning starts with one mission: organize the day
+          before recess chaos begins.
+        </p>
+        <p>
+          In one corner, Bit lines up cubbies in a numbered row — one slot per child, perfectly
+          ordered. A child who wants the third cubby does not search. They count to three and reach
+          directly in. Fast. Predictable. But the cubbies are fixed. Add a new child mid-week and
+          the row has no room. Everything must shift.
+        </p>
+        <p>
+          In another corner, Bit sets out clue cards. The first card does not hold the treasure.
+          It holds a map to the second card. The second leads to the third. The chain is flexible —
+          add a new clue anywhere without moving the others. But if you want the seventh clue, you
+          must follow the chain from the start. There are no shortcuts.
+        </p>
+        <p>
+          For breakfast, Bit stacks pancakes onto a single tray. The last pancake made sits on top.
+          It is the first one eaten. The plate at the bottom waits longest. Order-in-reverse. Last in,
+          first out. If you want the bottom pancake, you must lift every layer above it first.
+        </p>
+        <p>
+          For the ice cream line, the rule is different. Whoever arrived first gets served first.
+          No cutting. No skipping. The line is fair because it is ordered by arrival, and arrival
+          cannot be faked.
+        </p>
+        <p>
+          When a whistle blows and a red ball goes missing, Bit checks every cubby one by one.
+          Box one. Box two. Box three. On a bad day it is the last box checked. Bit counts
+          twenty-eight steps to find one ball.
+        </p>
+        <p>
+          The next morning, Bit sorts the cubbies by ball color before play begins. Now the search
+          is different. Jump to the middle. Is the red section left or right? Left. Jump to the
+          middle of the left side. Is it here or further left? Here. Three steps instead of
+          twenty-eight. The shape of the storage changed the speed of the search.
+        </p>
+        <p>
+          By sunset, Bit writes one line on the chalkboard:
+          <em>Order is not decoration. Order is performance.</em>
+        </p>
+      </section>
+
+      <!-- ============================================================
+           PART 2: THE VISUAL BLUEPRINT
+      ============================================================ -->
+      <section id="part-2" class="chapter page-break-before">
+        <h2>Part 2: The Visual Blueprint</h2>
+        <p>Planned diagram sequence (12 diagrams):</p>
+        <ol>
+          <li>Playground map overview with icon legend: cubbies, clue chain, tray, line, and map</li>
+          <li>Cubbies as indexed array slots with zero-based numbering</li>
+          <li>Clue chain as linked list nodes with next-pointer arrows</li>
+          <li>Pancake tray as stack: push and pop operations</li>
+          <li>Ice cream line as queue: enqueue and dequeue operations</li>
+          <li>Linear search path trace: twenty-eight comparisons worst case</li>
+          <li>Binary search split tree: six comparisons maximum for twenty-eight items</li>
+          <li>Bubble sort swaps across rounds until sorted</li>
+          <li>Insertion sort: building the sorted section left to right</li>
+          <li>Hashing as fingerprint shortcuts: name maps to locker number in one step</li>
+          <li>Family tree hierarchy: root, branches, leaves, parent, child</li>
+          <li>Big O effort ladder from O(1) constant time to O(n!) factorial</li>
+        </ol>
+
+        <div class="diagram-placeholder">
+          <p><strong>Diagram 2.1 — Playground Map Overview</strong><br />Diagram to be produced in HexaTech HTML/CSS visual framework.</p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           PART 3: THE CODE ADAPTER
+      ============================================================ -->
+      <section id="part-3" class="chapter page-break-before">
+        <h2>Part 3: The Code Adapter</h2>
+
+        <h3>Metaphor to Code Mapping</h3>
+        <table>
+          <thead>
+            <tr><th>Story Element</th><th>Technical Name</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Numbered cubbies</td><td>Array (index-based access)</td></tr>
+            <tr><td>Clue card chain</td><td>Linked list (next-pointer nodes)</td></tr>
+            <tr><td>Pancake tray</td><td>Stack (LIFO)</td></tr>
+            <tr><td>Ice cream line</td><td>Queue (FIFO)</td></tr>
+            <tr><td>Checking every cubby</td><td>Linear search O(n)</td></tr>
+            <tr><td>Jumping to middle</td><td>Binary search O(log n)</td></tr>
+            <tr><td>Swapping neighbors until sorted</td><td>Bubble sort O(n²)</td></tr>
+            <tr><td>Fingerprint locker shortcut</td><td>Hash map O(1) average lookup</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Canonical Patterns</h3>
+
+        <h4>Array and Linear Search (Python)</h4>
+        <pre><code class="language-python"># Array: indexed, fixed-size in concept
+cubbies = ["red ball", "blue block", "puzzle", "crayon"]
+
+# Linear search — check every slot
+def find_item(cubbies, target):
+    for i, item in enumerate(cubbies):
+        if item == target:
+            return i
+    return -1
+
+print(find_item(cubbies, "puzzle"))  # 2
+</code></pre>
+
+        <h4>Binary Search (Python) — requires sorted input</h4>
+        <pre><code class="language-python">def binary_search(sorted_items, target):
+    low, high = 0, len(sorted_items) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if sorted_items[mid] == target:
+            return mid
+        elif sorted_items[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+</code></pre>
+
+        <h4>Stack (Python)</h4>
+        <pre><code class="language-python">stack = []
+stack.append("pancake 1")   # push
+stack.append("pancake 2")
+stack.append("pancake 3")
+print(stack.pop())           # "pancake 3" — last in, first out
+</code></pre>
+
+        <h4>Queue (Python)</h4>
+        <pre><code class="language-python">from collections import deque
+queue = deque()
+queue.append("first child")   # enqueue
+queue.append("second child")
+print(queue.popleft())         # "first child" — first in, first out
+</code></pre>
+
+        <h4>Hash Map (Python)</h4>
+        <pre><code class="language-python"># O(1) average lookup — no searching required
+lockers = {
+    "Bit": 42,
+    "Mara": 17,
+    "Nia": 8,
+}
+print(lockers["Bit"])  # 42 — directly
+</code></pre>
+
+        <h4>Same Structures in JavaScript</h4>
+        <pre><code class="language-javascript">// Array
+const cubbies = ["red ball", "blue block", "puzzle"];
+
+// Stack via Array
+const stack = [];
+stack.push("pancake 1");
+stack.push("pancake 2");
+console.log(stack.pop());  // "pancake 2"
+
+// Queue via Array (not optimal for large data — use a linked structure)
+const queue = [];
+queue.push("first child");
+queue.push("second child");
+console.log(queue.shift()); // "first child"
+
+// Hash Map
+const lockers = new Map();
+lockers.set("Bit", 42);
+console.log(lockers.get("Bit")); // 42
+</code></pre>
+
+        <h3>Antipatterns</h3>
+
+        <h4>Binary Search on Unsorted Data</h4>
+        <pre><code class="language-python"># WRONG: binary search on unsorted list returns wrong results silently
+items = [7, 1, 9, 3, 5]
+result = binary_search(items, 3)  # may return -1 incorrectly
+# FIX: always sort before binary searching
+items.sort()
+result = binary_search(items, 3)  # correct
+</code></pre>
+
+        <h4>Array for High-Frequency Middle Insertions</h4>
+        <pre><code class="language-python"># O(n) cost per insert — every item after the insertion point must shift
+items = list(range(1_000_000))
+items.insert(500_000, 99)  # slow: half a million shifts
+
+# FIX: if you need many middle insertions, a linked list or deque is cheaper
+from collections import deque
+d = deque(range(1_000_000))
+d.insert(500_000, 99)  # still O(n) for deque insert, but better for front/back ops
+</code></pre>
+
+        <h3>Before and After</h3>
+        <p><strong>Before:</strong> Solving every problem with a flat list and a loop, regardless of how often items are searched, inserted, or removed.</p>
+        <p><strong>After:</strong> Choosing the structure based on the dominant operation — array for random access, linked list for frequent insertion, stack for LIFO unwinding, queue for ordered processing, hash map for fast lookup.</p>
+      </section>
+
+      <!-- ============================================================
+           LAB EXERCISES
+      ============================================================ -->
+      <section id="labs" class="chapter page-break-before">
+        <h2>Lab Exercises</h2>
+
+        <ol>
+          <li id="lab-14-01">
+            <strong>Lab 14-01 — Array Basics:</strong>
+            Given <code>["apple", "banana", "cherry", "date"]</code>, write a linear search
+            function. Count how many comparisons it takes to find "cherry".
+          </li>
+          <li id="lab-14-02">
+            <strong>Lab 14-02 — Binary Search:</strong>
+            Sort the list <code>[15, 3, 8, 1, 20, 7]</code> and implement binary search to
+            find the value <code>8</code>. Count the steps.
+          </li>
+          <li id="lab-14-03">
+            <strong>Lab 14-03 — Stack vs Queue:</strong>
+            Given the sequence <code>["A", "B", "C", "D"]</code>, show the output order
+            if processed as a stack and again as a queue.
+          </li>
+          <li id="lab-14-04">
+            <strong>Lab 14-04 — Hash Map Lookup:</strong>
+            Build a hash map of five playground items. Write a function that returns the
+            item description or "not found" in O(1) time.
+          </li>
+          <li id="lab-14-05">
+            <strong>Lab 14-05 — Big O Analysis:</strong>
+            Identify the Big O time complexity of: (a) printing every item in a list,
+            (b) a nested loop over the same list, (c) a hash map lookup.
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============================================================
+           APPENDIX A: LAB SOLUTIONS
+      ============================================================ -->
+      <section id="appendix-solutions" class="appendix page-break-before">
+        <h2>Appendix A: Lab Solutions</h2>
+
+        <article>
+          <h3>Lab 14-01 — Array Basics</h3>
+          <h4>Hint</h4>
+          <p>Iterate with a counter. Return the index when the item matches, or -1 at the end.</p>
+          <h4>Step by Step</h4>
+          <ol>
+            <li>"apple" at index 0 — no match.</li>
+            <li>"banana" at index 1 — no match.</li>
+            <li>"cherry" at index 2 — match. 3 comparisons.</li>
+          </ol>
+          <h4>Full Solution</h4>
+          <pre><code class="language-python">def linear_search(items, target):
+    for i, item in enumerate(items):
+        if item == target:
+            return i, i + 1  # index, steps
+    return -1, len(items)
+
+items = ["apple", "banana", "cherry", "date"]
+index, steps = linear_search(items, "cherry")
+print(f"Found at index {index} in {steps} step(s)")</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 14-02 — Binary Search</h3>
+          <h4>Hint</h4>
+          <p>Sort first. Then check the midpoint and halve the search space each round.</p>
+          <h4>Step by Step</h4>
+          <ol>
+            <li>Sorted: [1, 3, 7, 8, 15, 20]</li>
+            <li>Mid index 2 = 7. Target 8 is greater. Search right half.</li>
+            <li>Mid index 4 = 15. Target 8 is smaller. Search left.</li>
+            <li>Mid index 3 = 8. Found. 3 comparisons.</li>
+          </ol>
+          <h4>Full Solution</h4>
+          <pre><code class="language-python">nums = [15, 3, 8, 1, 20, 7]
+nums.sort()  # [1, 3, 7, 8, 15, 20]
+steps = 0
+low, high = 0, len(nums) - 1
+target = 8
+while low <= high:
+    steps += 1
+    mid = (low + high) // 2
+    if nums[mid] == target:
+        print(f"Found at index {mid} in {steps} step(s)")
+        break
+    elif nums[mid] < target:
+        low = mid + 1
+    else:
+        high = mid - 1</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 14-03 — Stack vs Queue</h3>
+          <h4>Hint</h4>
+          <p>Stack removes from the back (LIFO). Queue removes from the front (FIFO).</p>
+          <h4>Full Solution</h4>
+          <pre><code class="language-python">from collections import deque
+
+items = ["A", "B", "C", "D"]
+
+# Stack output: D C B A
+stack = []
+for i in items: stack.append(i)
+while stack: print(stack.pop(), end=" ")
+
+# Queue output: A B C D
+queue = deque(items)
+while queue: print(queue.popleft(), end=" ")</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 14-04 — Hash Map Lookup</h3>
+          <h4>Hint</h4>
+          <p>Use a dictionary. <code>dict.get(key, default)</code> returns the default if the key is absent.</p>
+          <h4>Full Solution</h4>
+          <pre><code class="language-python">playground = {
+    "ball": "red rubber ball",
+    "cube": "foam building cube",
+    "rope": "jump rope 3m",
+    "ring": "hula hoop",
+    "bat":  "foam bat",
+}
+def lookup(item):
+    return playground.get(item, "not found")
+
+print(lookup("rope"))  # "jump rope 3m"
+print(lookup("kite"))  # "not found"</code></pre>
+        </article>
+
+        <article>
+          <h3>Lab 14-05 — Big O Analysis</h3>
+          <h4>Full Solution</h4>
+          <pre><code class="language-text">(a) Printing every item in a list:
+    One operation per item → O(n)
+
+(b) Nested loop over the same list:
+    Each of n items triggers n inner operations → O(n²)
+
+(c) Hash map lookup:
+    One direct computation regardless of size → O(1) average</code></pre>
+        </article>
+      </section>
+
+    </main>
+
+    <script src="interactions.js"></script>
+  </body>
+</html>
