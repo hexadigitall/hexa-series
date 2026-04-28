@@ -10,7 +10,10 @@
     "scope": "15 books across 3 domains",
     "expansionCatalog": "docs/series-expansion-catalog.md",
     "productionStandard": "docs/standards/metaphors-book-production-standard.md",
-    "printSalesPlaybook": "docs/playbooks/metaphors-print-and-sales-playbook.md"
+    "printSalesPlaybook": "docs/playbooks/metaphors-print-and-sales-playbook.md",
+    "editionPolicy": "single-edition-first",
+    "mentorshipPolicy": "optional-extension",
+    "solutionsPolicy": "appendix-required-for-implementation-heavy-books"
   },
   "ruleOfThree": {
     "part1": {

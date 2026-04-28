@@ -116,6 +116,10 @@ Each Code Adapter must:
 
 **Format:** Print and digital. Each book standalone. The series has a linear career path but books can be read individually.
 
+**Edition Policy:** Single-edition first. Each title ships as one canonical edition by default, with a solutions appendix for labs and exercises.
+
+**Mentorship Policy:** Optional extension only. Books do not depend on mentorship operations to be complete products.
+
 **Tone:** The "Techpoet" voice. Precise but human. Rigorous but approachable. Never condescending, never vague.
 
 ---

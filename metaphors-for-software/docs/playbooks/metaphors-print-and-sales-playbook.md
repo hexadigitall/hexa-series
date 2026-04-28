@@ -15,6 +15,12 @@ It defines:
 3. 6 x 9 export and proofing workflow
 4. release packaging for online and print channels
 
+Default commercial model for this series:
+
+1. one primary book edition per title
+2. optional mentorship as an add-on product only when operationally launched
+3. optional referral path to relevant Hexadigitall courses for further learning
+
 ## Lifecycle
 
 Canonical chain for each title:
@@ -50,6 +56,11 @@ For each book folder:
 4. metadata.json
 5. generated exports in an exports directory
 6. cover assets in a covers directory
+
+Default edition policy:
+
+1. maintain one canonical interior source per title
+2. add separate teacher and student variants only when institutional delivery requires them
 
 Recommended generated export structure:
 
@@ -187,6 +198,14 @@ For each title release:
 3. cover files finalized by format
 4. product description and metadata prepared
 5. support and errata links published
+6. additional learning links to relevant Hexadigitall courses published where applicable
+
+Optional mentorship launch checklist:
+
+1. mentorship CTA destination is live
+2. enrollment operations are defined
+3. mentor assignment workflow is configured
+4. support SLA is defined
 
 ## Multi-Tier Verification Protocol
 
@@ -205,6 +224,7 @@ Product readiness:
 1. structure follows Rule of Three
 2. metadata is complete and current
 3. support paths are valid
+4. solutions appendix is present for implementation-heavy books
 
 Print readiness:
 

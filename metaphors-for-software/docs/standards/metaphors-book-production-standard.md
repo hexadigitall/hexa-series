@@ -15,6 +15,12 @@ Use this standard when:
 3. reviewing a draft for release
 4. aligning teacher and student variants where needed
 
+Default publishing mode for this series:
+
+1. single canonical edition per book
+2. no mandatory mentorship dependency
+3. optional mentorship extension only when operationally available
+
 ## Standard Intent
 
 Each title must function as all of the following at the same time:
@@ -86,8 +92,12 @@ Required in front matter:
 1. copyright and usage terms
 2. updates or errata path
 3. support path
-4. mentorship path
-5. course or cohort path where available
+4. additional learning path to relevant Hexadigitall courses where available
+
+Optional in front matter:
+
+1. mentorship path for titles that launch with guided delivery
+2. cohort path for titles with active cohort operations
 
 ## Front Matter Standard
 
@@ -95,7 +105,7 @@ Required sequence:
 
 1. copyright and access
 2. license and updates
-3. mentorship and enrollment options
+3. additional learning pathways
 4. table of contents
 5. how to use this book
 6. prerequisites and setup
@@ -107,6 +117,7 @@ Recommended additions where useful:
 1. author note
 2. portfolio rules page
 3. time and cost expectations for lab-heavy books
+4. mentorship and enrollment options when available
 
 ## Unit and Chapter Architecture
 
@@ -150,6 +161,23 @@ Assessment labeling guidance:
 3. assignment is portfolio evidence
 4. capstone is summative delivery
 
+## Solutions Appendix Standard
+
+For implementation-heavy books, a solutions appendix is required.
+
+Required appendix structure:
+
+1. hints-first section
+2. step-by-step reasoning section
+3. full worked solutions section
+4. troubleshooting notes for common mistakes
+
+Guidance:
+
+1. keep chapter exercises in main chapters
+2. keep answer keys and full solutions in appendix sections
+3. ensure appendix references exact chapter and exercise IDs
+
 ## Troubleshooting and Operational Realism
 
 Required where labs or infrastructure examples exist:
@@ -161,6 +189,12 @@ Required where labs or infrastructure examples exist:
 5. cost warnings for paid cloud services
 
 ## Teacher and Student Edition Boundaries
+
+Series default:
+
+1. one canonical edition per book
+2. appendices may include solution keys and worked labs
+3. teacher and student split is optional and demand-driven
 
 Shared across editions:
 
